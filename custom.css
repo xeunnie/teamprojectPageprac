@@ -1,0 +1,617 @@
+.LiveTalkMid .comment-reply-title,
+.LiveTalkMid .logged-in-as,
+.LiveTalkMid .comment-form-comment label {
+    display: none;
+}
+
+.LiveTalkMid .LiveTalkMidBtn {
+    float: left;
+    width: 20%;
+    height: 55px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: normal;
+    background-color: #000;
+}
+.show_popup_custom {
+    display: block !important;
+}
+.site-content{
+    overflow: hidden!important;
+}
+@media screen and (min-width: 768px) {
+    .PostCategoryTab-slide:first-child .PostCategoryTab-link:hover {
+        z-index: 10;
+    }
+}
+
+.BorderInput {
+    border: none;
+}
+
+.BorderInput input {
+    border: 2px solid #0D0D26;
+}
+.LiveTalkBtm-list.loading{
+    z-index: 100;
+    background-color: rgba(0,0,0,0.1);
+}
+
+.logged-in .comment-form{
+    display: block;
+}
+.comment-form{
+    display: flex;
+    flex-direction: column;
+}
+/* .comment-form .LiveTalkMidInput{ */
+    /* margin-bottom: 15px; */
+/* } */
+.comment-form .comment-notes{
+    margin-bottom: 15px;
+}
+.comment-form-cookies-consent{
+    margin-bottom: 15px;
+}
+.LiveTalk .hidden{
+    display: none;
+}
+.LiveTalkMidBtn{
+    cursor: pointer;
+}
+.editComment {
+    display: none;
+}
+.editComment.active{
+    display: flex;
+}
+.editComment .LiveTalkMidInput{
+    float: unset;
+}
+.edit-comment{
+    color: #000;
+    font-size: 14px;
+    line-height: 1.4em;
+    text-decoration: underline;
+    margin-right: 2px
+}
+.delete-comment{
+    color: #000;
+    font-size: 14px;
+    line-height: 1.4em;
+    text-decoration: underline;
+}
+.LiveTalkBtm-item .action{
+    margin-bottom: 8px;
+}
+
+.SubsSetting-item .NewsSubscribe{
+    display: block;
+    position: relative;
+}
+.NewsSubscribeTitle{
+    display: block;
+    color: #000;
+    font-size: 22px;
+    font-weight: 500;
+    font-family: 'Mbc';
+    line-height: 1.2em;
+}
+.NewsSubscribeCont{
+    display: table;
+    width: 100%;
+    margin-top: 20px;
+}
+.NewsSubscribeCont-text{
+    display: table-cell;
+    padding-right: 10px;
+    color: #000;
+    font-size: 16px;
+    font-weight: 300;
+    font-family: 'Mbc';
+    line-height: 1.2em;
+}
+.NewsSubscribeCont-link{
+    display: table-cell;
+    color: #000;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Mbc';
+    line-height: 1.2em;
+    text-align: right;
+    white-space: nowrap;
+    text-decoration: underline;
+}
+.SubscriptionPopup.show{
+    display: block;
+}
+.SubscriptionPopup .AlertBox.notshow{
+    display: none;
+}
+.LiveTalkMidBtn:hover{
+    cursor: pointer;
+}
+/*.modal {
+    display:    none;
+    position:   fixed;
+    z-index:    1000;
+    top:        0;
+    left:       0;
+    height:     100%;
+    width:      100%;
+    background:    url('http://i.stack.imgur.com/FhHRx.gif')   50% 50%    no-repeat;
+    background:    url('../image/bg/loading.svg')   50% 50%    no-repeat;
+    background-size: 31px;
+}
+*/
+
+body.loading .modal {
+    overflow: hidden;
+}
+
+
+body.loading .modal {
+    display: block;
+}
+.loadmore_comments.hidden{
+    display: none;
+}
+/*.StoryHeader {*/
+/*    margin-bottom: 40px;*/
+/*}*/
+
+/*.StoryHeader-title {*/
+/*    color: #000;*/
+/*    font-size: 40px;*/
+/*    font-weight: 600;*/
+/*    line-height: 1.2em;*/
+/*    font-family: 'Mbc';*/
+/*}*/
+/*.StoryHeader-text {*/
+/*    margin-top: 20px;*/
+/*    color: #000;*/
+/*    font-size: 16px;*/
+/*    line-height: 1.2em;*/
+/*    font-family: 'Mbc';*/
+/*}*/
+
+/*.Faq {
+    border-top: 3px solid #000;
+}
+.FaqItem {
+    border-bottom: 1px solid #CCCCCC;
+}
+.FaqItemTitle-link {
+    display: table;
+    width: 100%;
+    position: relative;
+    padding: 40px 0;
+}
+.FaqItemTitle-q {
+    display: table-cell;
+    width: 8.83%;
+    padding: 0 20px;
+    color: #000;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.4em;
+    font-family: 'Mbc';
+    text-align: center;
+}
+.FaqItemTitle-text {
+    display: table-cell;
+    color: #000;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.4em;
+    font-family: 'Mbc';
+    text-align: left;
+}
+.FaqItemTitle-link:after {
+    content: '';
+    display: block;
+    width: 20px;
+    height: 10px;
+    position: absolute;
+    top: 50%;
+    right: 40px;
+    background-image: url(../image/icon/ico-FaqArrow.png);
+    background-size: 20px 10px;
+    transform: translateX(-50%);
+}
+.Faq-list .FaqItem.active .FaqItemTitle-link:after {
+    transform: rotate(180deg);
+}
+.Faq-list .FaqItem .FaqItemTitle-link:after {
+    transform: rotate(360deg);
+}
+.Faq-list .FaqItem .FaqItemCont {
+    height: 0;
+    display: none;
+    opacity: 0;
+    transition: 0.5s ease-out;
+    transform: scaleY(0);
+}
+
+.Faq-list .FaqItem.active .FaqItemCont {
+    height: auto;
+    display: block;
+    opacity: 1;
+    transform: scaleY(1);
+    padding-bottom: 40px;
+    padding-left: 8.83%;
+}
+.StoryInfoLogo-img.hover {
+    display: none;
+}
+.AboutItem {
+    margin-bottom: 120px;
+}
+.StoryInfoLogo:hover .StoryInfoLogo-img {
+    display: none;
+}
+.StoryInfoLogo:hover .StoryInfoLogo-img.hover {
+    display: block;
+}
+.FaqItemCont-list{
+    margin-top:20px;
+}
+
+.FaqItemCont-item{
+    padding-bottom:20px;
+}
+
+.FaqItemCont-item:last-child{
+    padding-bottom:0;
+}
+
+.FaqItemContNotice{
+    display:block;
+    color:#888;
+    font-size:14px;
+    line-height:1.6em;
+    font-family: 'Mbc';
+}
+@media screen and (max-width: 1920px) and (min-width: 1025px) {
+    .StoryHeader-title {
+        font-size: 2.08333vw;
+    }
+    .StoryHeader {
+        margin-bottom: 1.04166vw;
+    }
+    .AboutTop {
+        margin-bottom: 6.25vw;
+        padding: 5.20833vw 0 7.29166vw;
+    }
+    .FaqItemCont-list{
+        margin-top:1.041666vw;
+    }
+
+    .FaqItemCont-item{
+        padding-bottom:1.04166vw;
+    }
+    .FaqItemCont-text{
+        font-size:0.83333vw;
+    }
+    .FaqItemContNotice{
+        font-size:0.729166vw;
+    }
+}
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+    .FaqItemTitle-link {
+        padding: 3.90625vw 0;
+        padding-right: 8.7890625vw;
+    }
+    .FaqItemTitle-link:after {
+        width: 1.953125vw;
+        height: 0.9765625vw;
+        right: 2.9296875vw;
+        background-size: 1.953125vw 0.9765625vw;
+    }
+    .FaqItemTitle-text {
+        font-size: 1.953125vw;
+    }
+    .FaqItemTitle-q {
+        width: 8.83%;
+        padding: 0 1.953125vw;
+        font-size: 1.953125vw;
+    }
+    .FaqItemCont-text {
+        font-size: 1.5625vw;
+    }
+    .FaqItemCont-list{
+        margin-top:1.953125vw;
+    }
+
+    .FaqItemCont-item{
+        padding-bottom:1.953125vw;
+    }
+
+
+    .FaqItemCont-text{
+        font-size:1.5625vw;
+    }
+
+    .FaqItemContNotice{
+        font-size:1.3671875vw;
+    }
+}
+@media screen and (max-width: 767px) and (min-width: 1px) {
+    .FaqItemTitle-link {
+        display: block;
+        padding: 5.5238vw 4.25vw;
+        padding-right: 8.7890625vw;
+    }
+    .FaqItemTitle-q {
+        display: block;
+        width: 100%;
+        padding: 0;
+        font-size: 3.8vw;
+        text-align: left;
+    }
+    .FaqItemTitle-text {
+        display: block;
+        font-size: 3.8vw;
+    }
+    .FaqItemTitle-link:after {
+        width: 3.5619vw;
+        height: 1.8095vw;
+        right: 2.5vw;
+        background-size: 3.5619vw 1.8095vw;
+    }
+    .Faq-list .FaqItem.active .FaqItemCont {
+        padding: 0 4.25vw;
+        padding-bottom: 9.5238vw;
+    }
+    .FaqItemCont-text {
+        font-size: 3.80952vw;
+    }
+    .FaqItemCont-list{
+        margin-top:4vw;
+    }
+
+    .FaqItemCont-item{
+        padding-bottom:4.7619vw;
+    }
+    .FaqItemCont-text{
+        font-size:3.333vw;
+    }
+
+    .FaqItemContNotice{
+        font-size:3.33333vw;
+    }
+}
+.SearchPostItemList-item {
+    clear: both;
+    margin-bottom: 50px;
+}*/
+/*CSS form in single newsletters*/
+body.single-newsletters {
+    background-color: #f4f4f4;
+}
+body.page-template-scraped-newletter .SearchPostItemTop{
+    justify-content:unset;
+}
+body.page-template-scraped-cardnew .SearchPostItemTop{
+    justify-content:unset;
+}
+
+
+.NewsletterItemThumb-inner input[type=checkbox], .CardNewsItemThumb input[type=checkbox], NewsletterItemThumb {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    z-index: 100;
+    width: 20px;
+    height: 20px;
+}
+.home .ReplyItemHeaderMore, .home .ReplyItemHeaderReport{
+    display: none;
+}
+.login-none .comment-notes, .login-none .comment-form-cookies-consent{
+    display: none;
+}
+.login-none .comment-form{
+    display: block;
+}
+.popup-comment{
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    z-index: 500;
+    transform: translate(-50%,-50%);
+}
+.popup-comment.is_view{
+    display: block;
+}
+.popup-comment-validate{
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    z-index: 500;
+    transform: translate(-50%,-50%);
+}
+.popup-comment-validate.is_view{
+    display: block;
+}
+/*CSS form subscribe home*/
+.none-button {
+    display: none;
+}
+
+.result-postype2 {
+    display: none;
+}
+/*
+.SubscribeForm .mailster-form-fields input[type= 'email'], .SubscribeForm .mailster-form-fields input[type= 'text'] {
+    display: block;
+    width: 70%;
+    height: 56px;
+    padding: 17px 20px;
+    color: #191819;
+    font-size: 15px;
+    line-height: normal;
+    background-color: #fff;
+    border: 2px solid #0D0D26;
+    margin-bottom: 10px;
+}
+
+.SubscribeForm .mailster-form-fields .form-submit {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 26%;
+    height: 122px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.2em;
+    text-align: center;
+    background-color: #0D0D26;
+    margin: 0;
+    display: flex;
+}
+
+.SubscribeForm .mailster-form-fields .form-submit:hover {
+    background-color: #33FFCC;
+}
+
+.SubscribeForm .mailster-form-fields .form-submit:hover input {
+    color: #191819;
+}
+
+.SubscribeForm .mailster-form-fields .form-submit input {
+    margin: auto;
+    color: white;
+}
+
+.SubscribeForm .mailster-form-fields input[type= 'checkbox'] {
+    margin: auto;
+    width: 18px;
+    height: 18px;
+    margin-right: 10px;
+    position: relative;
+    top: 5px;
+
+}
+
+.SubscribeForm .mailster-terms-of-use-wrapper {
+    font-size: 0.72916vw;
+}
+
+.SubscribeForm .mailster-advertising-information-wrapper {
+    font-size: 0.72916vw;
+}
+
+.SubscribeForm .mailster-form-info.error {
+    display: none;
+    position: absolute;
+    top: 135px;
+    height: auto;
+    min-height: 48px;
+    max-height: 100px;
+    z-index: 1000;
+}
+
+.SubscribeForm .mailster-form-info.error > p {
+    display: none;
+}
+.SubscribeForm .mailster-form-info.success{
+    display: none;
+}
+.SubscribeForm .mailster-form-fields {
+    display: block !important;
+}
+
+.custom-vld-submit a{
+    display: block;
+    background: #0d0c26;
+    padding: 25px;
+    color: #fff;
+}
+
+.NavyMidButton.loading{
+    cursor: wait;
+}
+
+.NavyMidButton_custom {
+    display: block;
+    width: 100%;
+    padding: 23px 10px;
+    background-color: #0D0C26;
+    text-align: center;
+}
+
+.SingleHeaderInfoMeta-item.Like:hover:before{
+    background-image:url(../image/icon/ico-single-like-h.png); !important;
+}
+.icon-love:before {
+    background-image: url(../image/icon/ico-single-like-h.png) !important;
+}
+
+.LoginPopup.show{
+    display: block;
+}
+.LoginPopup .AlertBox.notshow{
+    display: none;
+}
+.GrayInput.error .GrayInput-text {
+    border-color: #ccc !important;
+}
+
+.GrayInput.error .GrayInput-input {
+    border-color: #E60000 !important;
+}
+.home .ReplyItemHeaderMore, .home .ReplyItemHeaderReport{
+    display: none;
+}
+.login-none .comment-notes, .login-none .comment-form-cookies-consent{
+    display: none;
+}
+.login-none .comment-form{
+    display: block;
+}
+.popup-comment{
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    z-index: 500;
+    transform: translate(-50%,-50%);
+}
+.popup-comment.is_view{
+    display: block;
+}
+.popup-comment-validate{
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    z-index: 500;
+    transform: translate(-50%,-50%);
+}
+.popup-comment-validate.is_view{
+    display: block;
+}
+@media screen and (max-width: 1680px) {
+    .SubscribeForm .mailster-form-fields .form-submit {
+        width: 30%;
+        font-size: 16px;
+    }
+
+    .SubscribeForm .mailster-form-fields input[type= 'email'], .SubscribeForm .mailster-form-fields input[type= 'text'] {
+        width: 66%;
+    }
+
+    .SubscribeForm .mailster-terms-of-use-wrapper {
+        font-size: 14px;
+    }
+
+    .SubscribeForm .mailster-advertising-information-wrapper {
+        font-size: 14px;
+    }
+}
+*/
